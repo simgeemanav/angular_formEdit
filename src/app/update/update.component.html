@@ -1,0 +1,80 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <h5>Save Data</h5>
+        <div class="row">
+          <form>
+            <div class="form-group mb-2">
+              <label>id</label>
+              <input type="number" class="form-control" [(ngModel)]="employee.id" [disabled]="true" name="id"
+                     placeholder="Enter id">
+            </div>
+            <div class="form-group mb-2">
+              <label>carId</label>
+              <input type="text" class="form-control" [(ngModel)]="employee.carId" [disabled]="true" name="carId"
+                     placeholder="Enter carId">
+            </div>
+            <div class="form-group mb-2">
+              <label class="control-label">inStock</label>
+              <div class="form-control">
+                <label class="checkbox-inline">
+                  <input type="checkbox" required="required" #inStock="ngModel" value="true" name="inStock"
+                         id="checkbox1"
+                         [(ngModel)]="employee.inStock"> True
+                </label>&nbsp;
+                <label class="checkbox-inline">
+                  <input type="checkbox" required="required" #inStock="ngModel" value="false" name="inStock"
+                         id="checkbox2"
+                         [(ngModel)]="employee.inStock"> False
+                </label>
+              </div>
+              <span class="help-block" *ngIf="inStock.touched && inStock.invalid">inStock is required</span>
+            </div>
+
+
+            <div class="form-group mb-2">
+              <label>hp</label>
+              <input type="number" class="form-control" [(ngModel)]="employee.hp" name="hp" placeholder="Enter hp">
+            </div>
+            <div class="form-group mb-2">
+              <label>price</label>
+              <input type="number" class="form-control" [(ngModel)]="employee.price" name="price"
+                     placeholder="Enter price">
+            </div>
+
+            <div class="form-group mb-2">
+              <label class="control-label">Color</label>
+              <div class="form-control">
+                <label class="radio-inline">
+                  <input type="radio" required="required" #color="ngModel" value="red" name="color"
+                         [(ngModel)]="employee.color"> Red
+                </label>&nbsp;
+                <label class="radio-inline">
+                  <input type="radio" required="required" #color="ngModel" value="blue" name="color"
+                         [(ngModel)]="employee.color"> Blue
+                </label>&nbsp;
+                <label class="radio-inline">
+                  <input type="radio" required="required" #color="ngModel" value="black" name="color"
+                         [(ngModel)]="employee.color"> Black
+                </label>&nbsp;
+                <label class="radio-inline">
+                  <input type="radio" required="required" #color="ngModel" value="white" name="color"
+                         [(ngModel)]="employee.color"> White
+                </label>&nbsp;
+              </div>
+              <span class="help-block" *ngIf="color.touched && color.invalid">Color is required</span>
+            </div>
+
+          </form>
+        </div>
+        <div>
+          <button (click)="update()" class="btn btn-success">Save</button>&nbsp;
+          <button routerLink="/" class="btn btn-dark">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

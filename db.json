@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "carId": "1235",
+      "inStock": false,
+      "hp": 450,
+      "price": 17,
+      "color": "black"
+    },
+    {
+      "id": 2,
+      "carId": "HJKFSHJK42525fsdfs",
+      "inStock": "True",
+      "hp": 250,
+      "price": 50,
+      "color": "red"
+    },
+    {
+      "id": 3,
+      "carId": "1",
+      "inStock": true,
+      "hp": 55,
+      "price": 134,
+      "color": "white"
+    },
+    {
+      "carId": "55454",
+      "inStock": false,
+      "hp": 230,
+      "price": 2434,
+      "color": "blue",
+      "id": 4
+    },
+    {
+      "carId": "HFJKAHAK6872431",
+      "inStock": "true",
+      "hp": 250,
+      "price": 30,
+      "color": "red",
+      "checkArray": [],
+      "id": 5
+    },
+    {
+      "carId": "HSGDH64683",
+      "inStock": true,
+      "hp": 540,
+      "price": 1234555656,
+      "color": "blue",
+      "checkArray": [],
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
